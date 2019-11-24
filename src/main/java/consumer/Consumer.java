@@ -26,7 +26,7 @@ public class Consumer {
 //            consumer.seek(new TopicPartition(TOPIC, 0), 20L);
             records.forEach(record ->
                     System.out.printf("offset = %d, key = %s, value = %s%n", record.offset(), record.key(), record.value()));
-            consumer.commitSync();
+//            consumer.commitSync();
 //            consumer.commitAsync();
 
 //          Если коммит оффсетов зафейлится, то это будет залогировано
